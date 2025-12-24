@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
@@ -20,6 +21,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
@@ -295,6 +297,9 @@
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
   }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -337,11 +342,26 @@
   .h-\[373px\] {
     height: 373px;
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-\[433px\] {
     height: 433px;
   }
   .h-\[473px\] {
     height: 473px;
+  }
+  .h-\[490px\] {
+    height: 490px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[530px\] {
+    height: 530px;
+  }
+  .h-\[550px\] {
+    height: 550px;
   }
   .h-\[633px\] {
     height: 633px;
@@ -442,6 +462,9 @@
   .w-\[500px\] {
     width: 500px;
   }
+  .w-\[520px\] {
+    width: 520px;
+  }
   .w-\[600px\] {
     width: 600px;
   }
@@ -534,6 +557,9 @@
   .bg-\[\#FF823B\] {
     background-color: #FF823B;
   }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -542,6 +568,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -607,6 +636,10 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -653,6 +686,11 @@
       width: 80;
     }
   }
+  .md\:w-\[700px\] {
+    @media (width >= 48rem) {
+      width: 700px;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
@@ -661,6 +699,12 @@
   .md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 }
